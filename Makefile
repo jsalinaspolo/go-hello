@@ -17,7 +17,7 @@ test: unit-test build
 
 tag:
 	@echo "***Tagging $(IMAGE_NAME) $(VERSION)***"
-    docker tag $(IMAGE_NAME) $(IMAGE_NAME):$(VERSION)
+	docker tag $(IMAGE_NAME) $(IMAGE_NAME):$(VERSION)
 #     docker tag $(IMAGE_NAME) $(DOCKER_REGISTRY)/$(IMAGE_NAME):$(VERSION)
 #     docker tag $(IMAGE_NAME) $(DOCKER_REGISTRY)/$(IMAGE_NAME):latest
 
