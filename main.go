@@ -1,11 +1,10 @@
 package main
 
 import (
+	"auth0/internal/service"
 	"fmt"
 	"net/http"
 	"os"
-
-	"github.com/auth0/go-hello/internal/service"
 )
 
 type HelloServer interface {
