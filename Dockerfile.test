@@ -1,0 +1,9 @@
+FROM golang:1.14.4-buster AS builder
+
+WORKDIR /home/user
+
+COPY vendor vendor
+COPY internal internal
+COPY *.go go.mod go.sum ./
+
+RUN go test -mod=vendor -cover -coverprofile cover.out -covermode=count -v ./...
